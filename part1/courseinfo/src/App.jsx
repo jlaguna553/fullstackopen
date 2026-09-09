@@ -22,13 +22,13 @@ const Part = (props) => {
 
 const Total = (props) => {
   let totalExercises = 0;
-  props.map((part) => {
+  props.parts.map((part) => {
     totalExercises += part.exercises;
   });
 
   return (
-    console.log(props.parts),
-    (<p>Number of exercises {totalExercises}</p>)
+    // console.log(props.parts),
+    <p>Number of exercises {totalExercises}</p>
   );
 };
 
